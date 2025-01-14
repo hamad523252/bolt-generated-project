@@ -37,31 +37,33 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
 
-    .header {
-      text-align: center;
+    .navigation {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
       margin-bottom: 2rem;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: white;
+      background-color: var(--secondary-color);
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background-color: #2980b9;
+      transform: translateY(-2px);
     }
 
     h1 {
       color: var(--primary-color);
       font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .toggle-btn {
-      background-color: var(--secondary-color);
-      color: white;
-      border: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-    }
-
-    .toggle-btn:hover {
-      background-color: #2980b9;
-      transform: translateY(-2px);
+      text-align: center;
+      margin-bottom: 2rem;
     }
 
     .adhkar-list {
