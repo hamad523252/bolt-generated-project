@@ -5,6 +5,7 @@ import React from 'react'
     import morning4 from '../data/morning4.json'
     import morning5 from '../data/morning5.json'
     import morning6 from '../data/morning6.json'
+    import morning7 from '../data/morning7.json'
     import DhikrCard from '../components/DhikrCard'
     import '../App.css'
 
@@ -15,7 +16,8 @@ import React from 'react'
         ...morning3,
         ...morning4,
         ...morning5,
-        ...morning6
+        ...morning6,
+        ...morning7
       ]
 
       return (

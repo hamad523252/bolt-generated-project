@@ -12,6 +12,8 @@ import React, { useState } from 'react'
         }
       }
 
+      const progress = (count / dhikr.repeat) * 100
+
       return (
         <div className="dhikr-card">
           <div className="dhikr-text">
@@ -20,6 +22,12 @@ import React, { useState } from 'react'
           <div className="counter-container">
             <div className={`count-display ${isAnimating ? 'bounce' : ''}`}>
               {count} / {dhikr.repeat}
+            </div>
+            <div className="progress-bar">
+              <div 
+                className="progress" 
+                style={{ width: `${progress}%` }}
+              ></div>
             </div>
             <button 
               className={`count-btn ${count >= dhikr.repeat ? 'completed' : ''}`}
